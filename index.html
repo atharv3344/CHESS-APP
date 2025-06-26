@@ -1,0 +1,20 @@
+<!-- index.html additions -->
+<!-- Add these UI elements inside the <body> tag -->
+
+<div>
+  <input id="usernameInput" placeholder="Enter your username" />
+  <button onclick="startOnline()">Play Online</button>
+</div>
+<div>
+  <strong>Opponent:</strong> <span id="opponentName">-</span>
+</div>
+<div>
+  <button onclick="sendDrawRequest()">Request Draw</button>
+  <button onclick="resignGame()">Resign</button>
+</div>
+<div>
+  <textarea id="chatBox" readonly rows="5" style="width:300px"></textarea><br>
+  <input id="chatInput" placeholder="Type message" />
+  <button onclick="sendChat()">Send</button>
+</div>
+<div id="disconnectTimer" style="color:red;font-weight:bold;"></div>
